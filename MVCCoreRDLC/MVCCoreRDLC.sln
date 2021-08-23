@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCoreRDLC", "MVCCoreRDLC\MVCCoreRDLC.csproj", "{AA4920C4-B075-47F5-B719-4D956AB845F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportDesigner", "ReportDesigner\ReportDesigner.csproj", "{38D72385-BDC1-4489-BA32-EEF8F4C1E45E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA4920C4-B075-47F5-B719-4D956AB845F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA4920C4-B075-47F5-B719-4D956AB845F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA4920C4-B075-47F5-B719-4D956AB845F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA4920C4-B075-47F5-B719-4D956AB845F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D72385-BDC1-4489-BA32-EEF8F4C1E45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D72385-BDC1-4489-BA32-EEF8F4C1E45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D72385-BDC1-4489-BA32-EEF8F4C1E45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D72385-BDC1-4489-BA32-EEF8F4C1E45E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A45902D-9E82-4413-9FC8-58BE5E856E4E}
+	EndGlobalSection
+EndGlobal
