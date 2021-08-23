@@ -1,6 +1,7 @@
 ﻿using AspNetCore.Reporting;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Data;
 
@@ -25,13 +26,14 @@ namespace MVCCoreRDLC.Controllers
         public IActionResult PDF()
         {
             DataTable dt = GetData();
+            string parameter = "Report Date: "+DateTime.Today.ToString("yyyy-MM-dd");
 
             string mimetype = "";
             int extension = 1;
             var path = $"{this._webHostEnvironment.WebRootPath}\\reports\\Report1.rdlc";
 
             Dictionary<string, string> parameters = new Dictionary<string, string>();
-            parameters.Add("prm", "DMS Software Engineering");
+            parameters.Add("prm", parameter);
 
             LocalReport localReport = new LocalReport(path);
             localReport.AddDataSource("dsEmployee", dt);
@@ -44,13 +46,14 @@ namespace MVCCoreRDLC.Controllers
         public IActionResult Excel()
         {
             DataTable dt = GetData();
+            string parameter = "Report Date: " + DateTime.Today.ToString("yyyy-MM-dd");
 
             string mimetype = "";
             int extension = 1;
             var path = $"{this._webHostEnvironment.WebRootPath}\\reports\\Report1.rdlc";
 
             Dictionary<string, string> parameters = new Dictionary<string, string>();
-            parameters.Add("prm", "DMS Software Engineering");
+            parameters.Add("prm", parameter);
 
             LocalReport localReport = new LocalReport(path);
             localReport.AddDataSource("dsEmployee", dt);
@@ -63,13 +66,14 @@ namespace MVCCoreRDLC.Controllers
         public IActionResult Word()
         {
             DataTable dt = GetData();
+            string parameter = "Report Date: " + DateTime.Today.ToString("yyyy-MM-dd");
 
             string mimetype = "";
             int extension = 1;
             var path = $"{this._webHostEnvironment.WebRootPath}\\reports\\Report1.rdlc";
 
             Dictionary<string, string> parameters = new Dictionary<string, string>();
-            parameters.Add("prm", "DMS Software Engineering");
+            parameters.Add("prm", parameter);
 
             LocalReport localReport = new LocalReport(path);
             localReport.AddDataSource("dsEmployee", dt);

@@ -14,3 +14,6 @@ ASP.NET Core MVC with RDLC Reports
 - AspNetCore.Reporting (v2.1.0)
 - System.CodeDom (v.5.0.0)
 - System.Data.SqlClient (v4.8.2)
+
+## Microsoft RDLC Report Designer
+https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
